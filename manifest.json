@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "IP & Geo Info Viewer",
+  "version": "1.0",
+  "description": "View your public IP address, location and ISP info.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage"],
+"host_permissions": [
+  "https://api.ipify.org/",
+  "https://ipapi.co/",
+  "https://*.tile.openstreetmap.org/",
+  "https://api.open-meteo.com/"
+],
+"web_accessible_resources": [
+  {
+    "resources": ["leaflet/images/*"],
+    "matches": ["<all_urls>"]
+  }
+]
+}

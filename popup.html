@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IP Lookup</title>
+  <link rel="stylesheet" href="leaflet/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="github-btn">
+  <a href="https://github.com/yang-shuohao/ip-geo" target="_blank" title="View on GitHub">🌐 GitHub</a>
+</div>
+  <div class="row">
+    <span class="label">IP:</span>
+    <span id="ip">Loading...</span>
+    <span id="copy" class="copy-btn" title="Copy IP">📋</span>
+  </div>
+  <div class="row"><span class="label">City:</span> <span id="city">-</span></div>
+  <div class="row"><span class="label">Region:</span> <span id="region">-</span></div>
+  <div class="row"><span class="label">Country:</span> <span id="country">-</span></div>
+  <div class="row"><span class="label">Postal Code:</span> <span id="postal">-</span></div>
+  <div class="row"><span class="label">ISP:</span> <span id="isp">-</span></div>
+  <div class="row"><span class="label">Timezone:</span> <span id="timezone">-</span></div>
+  <div class="row"><span class="label">Local Time:</span> <span id="localtime">-</span></div>
+  <div class="row"><span class="label">Currency:</span> <span id="currency">-</span></div>
+  <div class="row"><span class="label">Organization:</span> <span id="org">-</span></div>
+  <div class="row"><span class="label">Languages:</span> <span id="languages">-</span></div>
+  <div class="row"><span class="label">IP Type:</span> <span id="ip_type">-</span></div>
+  <div class="row"><span class="label">ASN:</span> <span id="asn">-</span></div>
+  <div class="row"><span class="label">Weather:</span> <span id="weather">-</span></div>
+  <div class="row"><span class="label">Operating System:</span> <span id="os_info">-</span></div>
+  <div class="row"><span class="label">Browser:</span> <span id="browser_info">-</span></div>
+
+  <div id="map"></div>
+
+  <script src="leaflet/leaflet.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

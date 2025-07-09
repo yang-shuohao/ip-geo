@@ -1,0 +1,115 @@
+/* 基础和字体 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 10px;
+  width: 320px;
+  margin: 0;
+  user-select: none;
+  background-color: #f9f9f9;
+  color: #333;
+  max-height: 400px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.row {
+  margin: 6px 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  font-weight: 600;
+  width: 70px;
+  flex-shrink: 0;
+  color: #555;
+   margin-right: 50px;
+}
+
+.copy-btn {
+  cursor: pointer;
+  padding: 4px 8px;
+  margin-left: 6px;
+  border-radius: 6px;
+  background: #e0e0e0;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  user-select: none;
+}
+.copy-btn:hover {
+  background-color: #c7c7c7;
+}
+
+#map {
+  height: 200px;
+  margin-top: 12px;
+  border-radius: 10px;
+  border: 1.5px solid #ddd;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* 链接样式 */
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* 深色模式 */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1e1e1e;
+    color: #ccc;
+  }
+  .label {
+    color: #aaa;
+  }
+  .copy-btn {
+    background: #3a3a3a;
+    color: #eee;
+  }
+  .copy-btn:hover {
+    background-color: #555;
+  }
+  #map {
+    border: 1.5px solid #444;
+    background-color: #222;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
+  }
+}
+
+.github-btn {
+  text-align: right;
+  margin-bottom: 8px;
+}
+
+.github-btn a {
+  font-size: 14px;
+  padding: 6px 10px;
+  background-color: #24292f;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.github-btn a:hover {
+  background-color: #444c56;
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+  .github-btn a {
+    background-color: #2d333b;
+    color: #fff;
+  }
+
+  .github-btn a:hover {
+    background-color: #444c56;
+  }
+}
